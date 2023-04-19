@@ -9,7 +9,7 @@ def get_input(prompt):
     return input(prompt)
 
 
-if __name__ == "__main__":
+def main():
     if len(sys.argv) > 1:
         user_name = sys.argv[1]
         user_greeting = sys.argv[2] if len(sys.argv) > 2 else ""
@@ -19,3 +19,7 @@ if __name__ == "__main__":
 
     greeting = greet(user_name, user_greeting) if user_greeting else greet(user_name)
     print(greeting)
+
+
+if __name__ == "__main__":
+    main()
